@@ -1,0 +1,7 @@
+|flopr
+clk => ~NO_FANOUT~
+d[0] => q.DATAA
+reset => q.OUTPUTSELECT
+q[0] << q.DB_MAX_OUTPUT_PORT_TYPE
+
+
