@@ -1,5 +1,5 @@
 module flopr
-  #(parameter N = 1)(
+  #(parameter int N = 1)(
   input logic clk,
   input logic[N-1: 0] d,
   input logic reset,

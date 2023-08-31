@@ -1,5 +1,5 @@
 Flow report for SingleCycleProcessor
-Wed Aug 30 16:55:57 2023
+Thu Aug 31 20:24:50 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Aug 30 16:55:57 2023       ;
+; Flow Status                        ; Successful - Thu Aug 31 20:24:50 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; SingleCycleProcessor                        ;
-; Top-level Entity Name              ; flopr                                       ;
+; Top-level Entity Name              ; signext                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1                                           ;
-;     Total combinational functions  ; 1                                           ;
+; Total logic elements               ; 24                                          ;
+;     Total combinational functions  ; 24                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 4                                           ;
+; Total pins                         ; 96                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 08/30/2023 16:55:50  ;
+; Start date & time ; 08/31/2023 20:24:42  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; SingleCycleProcessor ;
 +-------------------+----------------------+
@@ -74,25 +74,29 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+----------------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value        ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+----------------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 202972269626745.169342535010795        ; --                   ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 202972269626745.169352428211498        ; --                   ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --          ; flopr_tb                          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --          ; signext_tb                        ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --                   ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --                   ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --                   ; --          ; eda_board_design_signal_integrity ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --                   ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; flopr_tb                               ; --                   ; --          ; eda_simulation                    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; signext_tb                             ; --                   ; --          ; eda_simulation                    ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --                   ; --          ; eda_simulation                    ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>               ; --          ; --                                ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --                   ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_FILE                  ; flopr_tb.sv                            ; --                   ; --          ; flopr_tb                          ;
+; EDA_TEST_BENCH_FILE                  ; signext_tb.sv                          ; --                   ; --          ; signext_tb                        ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; flopr_tb                               ; --                   ; --          ; flopr_tb                          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; signext_tb                             ; --                   ; --          ; signext_tb                        ;
 ; EDA_TEST_BENCH_NAME                  ; flopr_tb                               ; --                   ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; signext_tb                             ; --                   ; --          ; eda_simulation                    ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --                   ; --          ; eda_simulation                    ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --                   ; flopr       ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --                   ; flopr       ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --                   ; flopr       ; Top                               ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --                   ; signext     ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --                   ; signext     ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --                   ; signext     ; Top                               ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --                   ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                     ; flopr                                  ; SingleCycleProcessor ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                     ; signext                                ; SingleCycleProcessor ; --          ; --                                ;
 +--------------------------------------+----------------------------------------+----------------------+-------------+-----------------------------------+
 
 
@@ -101,8 +105,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 396 MB              ; 00:00:19                           ;
-; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:19                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 396 MB              ; 00:00:22                           ;
+; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:22                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
