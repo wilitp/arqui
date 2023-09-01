@@ -9,34 +9,34 @@
 # Copying /home/guille/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/imem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:15:22 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
+# Start time: 12:38:46 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/imem.sv 
+# -- Compiling module imem
 # 
 # Top level modules:
-# 	signext
-# End time: 20:15:22 on Aug 31,2023, Elapsed time: 0:00:00
+# 	imem
+# End time: 12:38:46 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:15:22 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
+# Start time: 12:38:46 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv 
+# -- Compiling module imem_tb
 # 
 # Top level modules:
-# 	signext_tb
-# End time: 20:15:22 on Aug 31,2023, Elapsed time: 0:00:00
+# 	imem_tb
+# End time: 12:38:46 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:15:22 on Aug 31,2023
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  imem_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" imem_tb 
+# Start time: 12:38:46 on Sep 01,2023
 # Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
+# Loading work.imem_tb
+# Loading work.imem
 # 
 # add wave *
 # view structure
@@ -44,13 +44,10 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Output positivo stur: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# Output negativo stur: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# Output negativo stur: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# Output negativo stur: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(24)
-#    Time: 0 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 24
+# q:          0
+# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv(10)
+#    Time: 2 ps  Iteration: 0  Instance: /imem_tb
+# Break in Module imem_tb at /home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv line 10
 # 
 # stdin: <EOF>
 do SingleCycleProcessor_run_msim_rtl_verilog.do
@@ -63,36 +60,36 @@ do SingleCycleProcessor_run_msim_rtl_verilog.do
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/imem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:16:23 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
+# Start time: 12:39:16 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/imem.sv 
+# -- Compiling module imem
 # 
 # Top level modules:
-# 	signext
-# End time: 20:16:23 on Aug 31,2023, Elapsed time: 0:00:00
+# 	imem
+# End time: 12:39:16 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:16:23 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
+# Start time: 12:39:16 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv 
+# -- Compiling module imem_tb
 # 
 # Top level modules:
-# 	signext_tb
-# End time: 20:16:23 on Aug 31,2023, Elapsed time: 0:00:00
+# 	imem_tb
+# End time: 12:39:16 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:16:23 on Aug 31,2023, Elapsed time: 0:01:01
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  imem_tb
+# End time: 12:39:17 on Sep 01,2023, Elapsed time: 0:00:31
 # Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:16:23 on Aug 31,2023
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" imem_tb 
+# Start time: 12:39:17 on Sep 01,2023
 # Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
+# Loading work.imem_tb
+# Loading work.imem
 # 
 # add wave *
 # view structure
@@ -100,13 +97,10 @@ do SingleCycleProcessor_run_msim_rtl_verilog.do
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 4 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
+# q:          1
+# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv(10)
+#    Time: 2 ps  Iteration: 0  Instance: /imem_tb
+# Break in Module imem_tb at /home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv line 10
 do SingleCycleProcessor_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -117,52 +111,19 @@ do SingleCycleProcessor_run_msim_rtl_verilog.do
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/imem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:17:14 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:17:14 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:17:14 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:17:14 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:17:15 on Aug 31,2023, Elapsed time: 0:00:52
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:17:15 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 4 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
+# Start time: 12:42:41 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/imem.sv 
+# -- Compiling module imem
+# ** Error: /home/guille/famaf/arqui/SingleCycleProcessor/imem.sv(9): (vlog-2730) Undefined variable: 'rom'.
+# End time: 12:42:41 on Sep 01,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /home/guille/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./SingleCycleProcessor_run_msim_rtl_verilog.do line 8
+# /home/guille/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/imem.sv}"
 do SingleCycleProcessor_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -173,38 +134,36 @@ do SingleCycleProcessor_run_msim_rtl_verilog.do
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/imem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:18:00 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
+# Start time: 12:42:56 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/imem.sv 
+# -- Compiling module imem
 # 
 # Top level modules:
-# 	signext
-# End time: 20:18:00 on Aug 31,2023, Elapsed time: 0:00:00
+# 	imem
+# End time: 12:42:56 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:18:00 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# Start time: 12:42:56 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv 
+# -- Compiling module imem_tb
 # 
 # Top level modules:
-# 	signext_tb
-# End time: 20:18:00 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:18:02 on Aug 31,2023, Elapsed time: 0:00:47
+# 	imem_tb
+# End time: 12:42:56 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:18:02 on Aug 31,2023
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  imem_tb
+# End time: 12:42:59 on Sep 01,2023, Elapsed time: 0:03:42
+# Errors: 1, Warnings: 0
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" imem_tb 
+# Start time: 12:42:59 on Sep 01,2023
 # Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
+# Loading work.imem_tb
+# Loading work.imem
 # 
 # add wave *
 # view structure
@@ -212,13 +171,10 @@ do SingleCycleProcessor_run_msim_rtl_verilog.do
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
+# q: f8000001
+# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv(10)
+#    Time: 2 ps  Iteration: 0  Instance: /imem_tb
+# Break in Module imem_tb at /home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv line 10
 do SingleCycleProcessor_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -229,38 +185,36 @@ do SingleCycleProcessor_run_msim_rtl_verilog.do
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/imem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:19:39 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
+# Start time: 12:43:26 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/imem.sv 
+# -- Compiling module imem
 # 
 # Top level modules:
-# 	signext
-# End time: 20:19:39 on Aug 31,2023, Elapsed time: 0:00:00
+# 	imem
+# End time: 12:43:26 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:19:39 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# Start time: 12:43:26 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv 
+# -- Compiling module imem_tb
 # 
 # Top level modules:
-# 	signext_tb
-# End time: 20:19:40 on Aug 31,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:19:41 on Aug 31,2023, Elapsed time: 0:01:39
+# 	imem_tb
+# End time: 12:43:26 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:19:41 on Aug 31,2023
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  imem_tb
+# End time: 12:43:27 on Sep 01,2023, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" imem_tb 
+# Start time: 12:43:27 on Sep 01,2023
 # Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
+# Loading work.imem_tb
+# Loading work.imem
 # 
 # add wave *
 # view structure
@@ -268,738 +222,9 @@ do SingleCycleProcessor_run_msim_rtl_verilog.do
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:20:12 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:20:12 on Aug 31,2023, Elapsed time: 0:00:00
+# q: f8008002
+# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv(10)
+#    Time: 2 ps  Iteration: 0  Instance: /imem_tb
+# Break in Module imem_tb at /home/guille/famaf/arqui/SingleCycleProcessor/imem_tb.sv line 10
+# End time: 12:51:37 on Sep 01,2023, Elapsed time: 0:08:10
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:20:12 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:20:12 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:20:14 on Aug 31,2023, Elapsed time: 0:00:33
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:20:14 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:20:53 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:20:53 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:20:53 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:20:53 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:20:53 on Aug 31,2023, Elapsed time: 0:00:39
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:20:53 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:21:52 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:21:52 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:21:52 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(14): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:21:52 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:21:53 on Aug 31,2023, Elapsed time: 0:01:00
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:21:53 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(27)
-#    Time: 6 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 27
-# A time value could not be extracted from the current line
-# A time value could not be extracted from the current line
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:22:17 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:22:17 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:22:17 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:22:17 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:22:19 on Aug 31,2023, Elapsed time: 0:00:26
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:22:19 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:22:39 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:22:39 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:22:39 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:22:39 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:22:40 on Aug 31,2023, Elapsed time: 0:00:21
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:22:40 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 1111111111111111111111111111111111111111111111111111111111111111
-# Output negativo stur: 1111111111111111111111111111111111111111111111111111111111111111
-# Output negativo stur: 1111111111111111111111111111111111111111111111111111111111111111
-# Output negativo stur: 1111111111111111111111111111111111111111111111111111111111111111
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:06 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:23:06 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:06 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:23:06 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:23:06 on Aug 31,2023, Elapsed time: 0:00:26
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:23:06 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000111111111111111111
-# Output negativo stur: 1111111111111111111111111111111111111111111111111111111111111111
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:24:29 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:24:29 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:24:29 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:24:29 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:24:31 on Aug 31,2023, Elapsed time: 0:01:25
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:24:31 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo cbz: 0000000000000000000000000000000000000000000000111111111111111111
-# Output negativo cbz: 1111111111111111111111111111111111111111111111111111111111111111
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:25:09 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:25:09 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:25:10 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:25:10 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:25:10 on Aug 31,2023, Elapsed time: 0:00:39
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:25:10 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo cbz: 0000000000000000000000000000000000000000000000111111111111111111
-# Output negativo cbz: 1111111111111111111111111111111111111111111111111111111111111111
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:25:24 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:25:24 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:25:24 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:25:24 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:25:24 on Aug 31,2023, Elapsed time: 0:00:14
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:25:24 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 1111111111111111111111111111111111111111111111111111111111111111
-# Output negativo stur: 1111111111111111111111111111111111111111111111111111111111111111
-# Output negativo cbz: 0000000000000000000000000000000000000000000000111111111111111111
-# Output negativo cbz: 1111111111111111111111111111111111111111111111111111111111111111
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:25:56 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:25:56 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:25:56 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:25:56 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:25:57 on Aug 31,2023, Elapsed time: 0:00:33
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:25:57 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo cbz: 0000000000000000000000000000000000000000000000111111111111111111
-# Output negativo cbz: 1111111111111111111111111111111111111111111111111111111111111111
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:26:18 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:26:18 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:26:18 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:26:18 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:26:19 on Aug 31,2023, Elapsed time: 0:00:22
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:26:19 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo cbz: 0000000000000000000000000000000000000000000000111111111111111111
-# Output negativo cbz: 1111111111111111111111111111111111111111111111111111111111111111
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:26:34 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:26:34 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:26:34 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:26:34 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:26:35 on Aug 31,2023, Elapsed time: 0:00:16
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:26:35 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo stur: 0000000000000000000000000000000000000000000000000000000000000000
-# Output negativo cbz: 0000000000000000000000000000000000000000000000111111111111111111
-# Output negativo cbz: 1111111111111111111111111111111111111111111111111111111111111111
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:27:46 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
-# -- Compiling module signext
-# 
-# Top level modules:
-# 	signext
-# End time: 20:27:46 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:27:46 on Aug 31,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv 
-# -- Compiling module signext_tb
-# 
-# Top level modules:
-# 	signext_tb
-# End time: 20:27:46 on Aug 31,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  signext_tb
-# End time: 20:27:47 on Aug 31,2023, Elapsed time: 0:01:12
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" signext_tb 
-# Start time: 20:27:47 on Aug 31,2023
-# Loading sv_std.std
-# Loading work.signext_tb
-# Loading work.signext
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Output positivo stur: 0000000000000000000000000000000000000000000000000000000011111111
-# Output negativo stur: 1111111111111111111111111111111111111111111111111111111111111111
-# Output negativo cbz: 0000000000000000000000000000000000000000000000111111111111111111
-# Output negativo cbz: 1111111111111111111111111111111111111111111111111111111111111111
-# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv(28)
-#    Time: 8 ps  Iteration: 0  Instance: /signext_tb
-# Break in Module signext_tb at /home/guille/famaf/arqui/SingleCycleProcessor/signext_tb.sv line 28
