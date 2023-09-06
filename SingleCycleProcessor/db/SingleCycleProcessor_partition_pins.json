@@ -2,7 +2,528 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "imem_addr_F[0]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[1]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[2]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[3]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[4]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[5]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[6]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[7]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[8]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[9]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[10]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[11]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[12]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[13]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[14]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[15]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[16]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[17]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[18]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[19]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[20]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[21]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[22]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[23]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[24]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[25]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[26]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[27]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[28]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[29]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[30]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[31]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[32]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[33]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[34]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[35]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[36]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[37]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[38]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[39]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[40]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[41]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[42]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[43]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[44]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[45]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[46]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[47]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[48]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[49]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[50]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[51]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[52]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[53]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[54]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[55]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[56]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[57]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[58]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[59]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[60]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[61]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[62]",
+					"strict" : false
+				},
+				{
+					"name" : "imem_addr_F[63]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCSrc_F",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[16]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[17]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[18]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[19]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[20]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[21]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[22]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[23]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[24]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[25]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[26]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[27]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[28]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[29]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[30]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[31]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[32]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[33]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[34]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[35]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[36]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[37]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[38]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[39]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[40]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[41]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[42]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[43]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[44]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[45]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[46]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[47]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[48]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[49]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[50]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[51]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[52]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[53]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[54]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[55]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[56]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[57]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[58]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[59]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[60]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[61]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[62]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[63]",
+					"strict" : false
+				},
+				{
+					"name" : "PCBranch_F[0]",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

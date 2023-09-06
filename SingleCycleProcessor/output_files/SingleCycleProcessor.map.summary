@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Sep  1 12:35:56 2023
+Analysis & Synthesis Status : Successful - Wed Sep  6 18:21:37 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : SingleCycleProcessor
-Top-level Entity Name : imem
+Top-level Entity Name : fetch
 Family : Cyclone IV E
-Total logic elements : 0
-    Total combinational functions : 0
+Total logic elements : 188
+    Total combinational functions : 188
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 38
+Total pins : 131
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
