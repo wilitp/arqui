@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SingleCycleProcessor
-Wed Sep  6 18:21:37 2023
+Fri Sep  8 13:18:38 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,16 +13,14 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Logic Cells Representing Combinational Loops
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: adder:Adder
- 12. Parameter Settings for User Entity Instance: mux2:Mux
- 13. Parameter Settings for User Entity Instance: flopr:PC
- 14. Port Connectivity Checks: "adder:Adder"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: adder:Add
+ 11. Parameter Settings for User Entity Instance: mux2:Mux
+ 12. Port Connectivity Checks: "adder:Add"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -49,16 +47,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Sep  6 18:21:37 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep  8 13:18:38 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; SingleCycleProcessor                        ;
-; Top-level Entity Name              ; fetch                                       ;
+; Top-level Entity Name              ; execute                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 188                                         ;
-;     Total combinational functions  ; 188                                         ;
+; Total logic elements               ; 478                                         ;
+;     Total combinational functions  ; 478                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 131                                         ;
+; Total pins                         ; 454                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -71,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+----------------------+
 ; Option                                                           ; Setting            ; Default Value        ;
 +------------------------------------------------------------------+--------------------+----------------------+
-; Top-level entity name                                            ; fetch              ; SingleCycleProcessor ;
+; Top-level entity name                                            ; execute            ; SingleCycleProcessor ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V            ;
 ; Use smart compilation                                            ; Off                ; Off                  ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                   ;
@@ -167,48 +165,48 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                           ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
-; mux2.sv                          ; yes             ; User SystemVerilog HDL File  ; /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv  ;         ;
-; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv ;         ;
-; fetch.sv                         ; yes             ; User SystemVerilog HDL File  ; /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv ;         ;
-; flopr.sv                         ; yes             ; User SystemVerilog HDL File  ; /home/guille/famaf/arqui/SingleCycleProcessor/flopr.sv ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
+; execute.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv ;         ;
+; mux2.sv                          ; yes             ; User SystemVerilog HDL File  ; /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv    ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv   ;         ;
+; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; /home/guille/famaf/arqui/SingleCycleProcessor/alu.sv     ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 188           ;
-;                                             ;               ;
-; Total combinational functions               ; 188           ;
-; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 64            ;
-;     -- 3 input functions                    ; 123           ;
-;     -- <=2 input functions                  ; 1             ;
-;                                             ;               ;
-; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 127           ;
-;     -- arithmetic mode                      ; 61            ;
-;                                             ;               ;
-; Total registers                             ; 0             ;
-;     -- Dedicated logic registers            ; 0             ;
-;     -- I/O registers                        ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 131           ;
-;                                             ;               ;
-; Embedded Multiplier 9-bit elements          ; 0             ;
-;                                             ;               ;
-; Maximum fan-out node                        ; PCSrc_F~input ;
-; Maximum fan-out                             ; 126           ;
-; Total fan-out                               ; 822           ;
-; Average fan-out                             ; 1.83          ;
-+---------------------------------------------+---------------+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimated Total logic elements              ; 478             ;
+;                                             ;                 ;
+; Total combinational functions               ; 478             ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 284             ;
+;     -- 3 input functions                    ; 191             ;
+;     -- <=2 input functions                  ; 3               ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 353             ;
+;     -- arithmetic mode                      ; 125             ;
+;                                             ;                 ;
+; Total registers                             ; 0               ;
+;     -- Dedicated logic registers            ; 0               ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 454             ;
+;                                             ;                 ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; alu:Alu|Mux14~2 ;
+; Maximum fan-out                             ; 128             ;
+; Total fan-out                               ; 2362            ;
+; Average fan-out                             ; 1.70            ;
++---------------------------------------------+-----------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -216,85 +214,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |fetch                     ; 188 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 131  ; 0            ; |fetch              ; fetch       ; work         ;
-;    |adder:Adder|           ; 62 (62)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fetch|adder:Adder  ; adder       ; work         ;
-;    |flopr:PC|              ; 126 (126)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fetch|flopr:PC     ; flopr       ; work         ;
+; |execute                   ; 478 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 454  ; 0            ; |execute            ; execute     ; work         ;
+;    |adder:Add|             ; 62 (62)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |execute|adder:Add  ; adder       ; work         ;
+;    |alu:Alu|               ; 352 (352)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |execute|alu:Alu    ; alu         ; work         ;
+;    |mux2:Mux|              ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |execute|mux2:Mux   ; mux2        ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------+
-; Logic Cells Representing Combinational Loops                ;
-+--------------------------------------------------------+----+
-; Logic Cell Name                                        ;    ;
-+--------------------------------------------------------+----+
-; flopr:PC|q[0]~0                                        ;    ;
-; adder:Adder|out[1]~62                                  ;    ;
-; adder:Adder|out[2]~61                                  ;    ;
-; adder:Adder|out[3]~60                                  ;    ;
-; adder:Adder|out[4]~59                                  ;    ;
-; adder:Adder|out[5]~58                                  ;    ;
-; adder:Adder|out[6]~57                                  ;    ;
-; adder:Adder|out[7]~56                                  ;    ;
-; adder:Adder|out[8]~55                                  ;    ;
-; adder:Adder|out[9]~54                                  ;    ;
-; adder:Adder|out[10]~53                                 ;    ;
-; adder:Adder|out[11]~52                                 ;    ;
-; adder:Adder|out[12]~51                                 ;    ;
-; adder:Adder|out[13]~50                                 ;    ;
-; adder:Adder|out[14]~49                                 ;    ;
-; adder:Adder|out[15]~48                                 ;    ;
-; adder:Adder|out[16]~47                                 ;    ;
-; adder:Adder|out[17]~46                                 ;    ;
-; adder:Adder|out[18]~45                                 ;    ;
-; adder:Adder|out[19]~44                                 ;    ;
-; adder:Adder|out[20]~43                                 ;    ;
-; adder:Adder|out[21]~42                                 ;    ;
-; adder:Adder|out[22]~41                                 ;    ;
-; adder:Adder|out[23]~40                                 ;    ;
-; adder:Adder|out[24]~39                                 ;    ;
-; adder:Adder|out[25]~38                                 ;    ;
-; adder:Adder|out[26]~37                                 ;    ;
-; adder:Adder|out[27]~36                                 ;    ;
-; adder:Adder|out[28]~35                                 ;    ;
-; adder:Adder|out[29]~34                                 ;    ;
-; adder:Adder|out[30]~33                                 ;    ;
-; adder:Adder|out[31]~32                                 ;    ;
-; adder:Adder|out[32]~31                                 ;    ;
-; adder:Adder|out[33]~30                                 ;    ;
-; adder:Adder|out[34]~29                                 ;    ;
-; adder:Adder|out[35]~28                                 ;    ;
-; adder:Adder|out[36]~27                                 ;    ;
-; adder:Adder|out[37]~26                                 ;    ;
-; adder:Adder|out[38]~25                                 ;    ;
-; adder:Adder|out[39]~24                                 ;    ;
-; adder:Adder|out[40]~23                                 ;    ;
-; adder:Adder|out[41]~22                                 ;    ;
-; adder:Adder|out[42]~21                                 ;    ;
-; adder:Adder|out[43]~20                                 ;    ;
-; adder:Adder|out[44]~19                                 ;    ;
-; adder:Adder|out[45]~18                                 ;    ;
-; adder:Adder|out[46]~17                                 ;    ;
-; adder:Adder|out[47]~16                                 ;    ;
-; adder:Adder|out[48]~15                                 ;    ;
-; adder:Adder|out[49]~14                                 ;    ;
-; adder:Adder|out[50]~13                                 ;    ;
-; adder:Adder|out[51]~12                                 ;    ;
-; adder:Adder|out[52]~11                                 ;    ;
-; adder:Adder|out[53]~10                                 ;    ;
-; adder:Adder|out[54]~9                                  ;    ;
-; adder:Adder|out[55]~8                                  ;    ;
-; adder:Adder|out[56]~7                                  ;    ;
-; adder:Adder|out[57]~6                                  ;    ;
-; adder:Adder|out[58]~5                                  ;    ;
-; adder:Adder|out[59]~4                                  ;    ;
-; adder:Adder|out[60]~3                                  ;    ;
-; adder:Adder|out[61]~2                                  ;    ;
-; adder:Adder|out[62]~1                                  ;    ;
-; adder:Adder|out[63]~0                                  ;    ;
-; Number of logic cells representing combinational loops ; 64 ;
-+--------------------------------------------------------+----+
-Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -317,17 +242,17 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 64 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |fetch|flopr:PC|q[49]      ;
+; 11:1               ; 64 bits   ; 448 LEs       ; 192 LEs              ; 256 LEs                ; No         ; |execute|alu:Alu|Mux14     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: adder:Adder ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; N              ; 64    ; Signed Integer                  ;
-+----------------+-------+---------------------------------+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder:Add ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; N              ; 64    ; Signed Integer                ;
++----------------+-------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -341,26 +266,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------+
-; Parameter Settings for User Entity Instance: flopr:PC ;
-+----------------+-------+------------------------------+
-; Parameter Name ; Value ; Type                         ;
-+----------------+-------+------------------------------+
-; N              ; 64    ; Signed Integer               ;
-+----------------+-------+------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "adder:Adder"                                                                                                                                     ;
-+----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                                                                                                                       ;
-+----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; b        ; Input ; Warning  ; Input port expression (32 bits) is smaller than the input port (64 bits) it drives.  Extra input bit(s) "b[63..32]" will be connected to GND. ;
-; b[31..3] ; Input ; Info     ; Stuck at GND                                                                                                                                  ;
-; b[1..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                  ;
-; b[34]    ; Input ; Info     ; Stuck at VCC                                                                                                                                  ;
-+----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------+
+; Port Connectivity Checks: "adder:Add"     ;
++---------+-------+----------+--------------+
+; Port    ; Type  ; Severity ; Details      ;
++---------+-------+----------+--------------+
+; b[1..0] ; Input ; Info     ; Stuck at GND ;
++---------+-------+----------+--------------+
 
 
 +-----------------------------------------------------+
@@ -368,18 +280,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 131                         ;
-; cycloneiii_lcell_comb ; 189                         ;
-;     arith             ; 61                          ;
-;         3 data inputs ; 61                          ;
-;     normal            ; 128                         ;
-;         1 data inputs ; 1                           ;
+; boundary_port         ; 454                         ;
+; cycloneiii_lcell_comb ; 478                         ;
+;     arith             ; 125                         ;
 ;         2 data inputs ; 1                           ;
-;         3 data inputs ; 62                          ;
-;         4 data inputs ; 64                          ;
+;         3 data inputs ; 124                         ;
+;     normal            ; 353                         ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 67                          ;
+;         4 data inputs ; 284                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.10                        ;
-; Average LUT depth     ; 4.83                        ;
+; Max LUT depth         ; 13.20                       ;
+; Average LUT depth     ; 9.13                        ;
 +-----------------------+-----------------------------+
 
 
@@ -398,10 +310,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Sep  6 18:21:29 2023
+    Info: Processing started: Fri Sep  8 13:18:31 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SingleCycleProcessor -c SingleCycleProcessor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file execute_tb.sv
+    Info (12023): Found entity 1: execute_tb File: /home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file execute.sv
+    Info (12023): Found entity 1: execute File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
     Info (12023): Found entity 1: mux2 File: /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
@@ -434,24 +350,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file regfile
     Info (12023): Found entity 1: regfile_tb File: /home/guille/famaf/arqui/SingleCycleProcessor/regfile_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file maindec.sv
     Info (12023): Found entity 1: maindec File: /home/guille/famaf/arqui/SingleCycleProcessor/maindec.sv Line: 1
-Info (12127): Elaborating entity "fetch" for the top level hierarchy
-Info (12128): Elaborating entity "adder" for hierarchy "adder:Adder" File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 12
-Info (12128): Elaborating entity "mux2" for hierarchy "mux2:Mux" File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 13
-Info (12128): Elaborating entity "flopr" for hierarchy "flopr:PC" File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 14
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12127): Elaborating entity "execute" for the top level hierarchy
+Info (12128): Elaborating entity "alu" for hierarchy "alu:Alu" File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 20
+Info (12128): Elaborating entity "adder" for hierarchy "adder:Add" File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 22
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:Mux" File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 3
-Info (21057): Implemented 319 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 67 input pins
-    Info (21059): Implemented 64 output pins
-    Info (21061): Implemented 188 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 402 megabytes
-    Info: Processing ended: Wed Sep  6 18:21:37 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:19
+Info (21057): Implemented 932 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 261 input pins
+    Info (21059): Implemented 193 output pins
+    Info (21061): Implemented 478 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 405 megabytes
+    Info: Processing ended: Fri Sep  8 13:18:38 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:18
 
 

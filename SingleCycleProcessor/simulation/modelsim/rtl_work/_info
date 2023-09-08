@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/home/guille/famaf/arqui/SingleCycleProcessor/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1694036299
+Z2 !s110 1694190439
 !i10b 1
 !s100 ljGRG:be6f]XM:<55^Z_:1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,93 +22,93 @@ R0
 w1694034757
 8/home/guille/famaf/arqui/SingleCycleProcessor/adder.sv
 F/home/guille/famaf/arqui/SingleCycleProcessor/adder.sv
-!i122 1
+!i122 2
 Z5 L0 1 8
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1694036299.000000
+Z7 !s108 1694190439.000000
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/adder.sv|
 !i113 1
 Z8 o-sv -work work
 Z9 !s92 -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor
 Z10 tCvgOpt 0
-vfetch
+valu
 R1
 R2
 !i10b 1
-!s100 9EZP=A`TPI8[io=2zS@Jf2
+!s100 4b_7?O^mz1XF0I8`<O]^l0
 R3
-IG^_a<]BnEa@GlT1VOTJ7:1
+II:d6TJ`2[3^OBjzz=]<Fe2
 R4
 S1
 R0
-w1694036298
-8/home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv
-F/home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv
-!i122 2
-L0 1 16
-R6
-r1
-!s85 0
-31
-R7
-!s107 /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv|
-!i113 1
-R8
-R9
-R10
-vfetch_tb
-R1
-R2
-!i10b 1
-!s100 LDjR7nfAKD?;dHGz[6SWi0
-R3
-ImT`Z^F<=aLJi487QJ]a:Z0
-R4
-S1
-R0
-w1694036049
-8/home/guille/famaf/arqui/SingleCycleProcessor/fetch_tb.sv
-F/home/guille/famaf/arqui/SingleCycleProcessor/fetch_tb.sv
-!i122 4
-L0 1 63
-R6
-r1
-!s85 0
-31
-R7
-!s107 /home/guille/famaf/arqui/SingleCycleProcessor/fetch_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/fetch_tb.sv|
-!i113 1
-R8
-R9
-R10
-vflopr
-R1
-R2
-!i10b 1
-!s100 J3f7VI?9Oni_fc5AJ_QaH0
-R3
-IG^gEME?I^W;Ej4ROA8<4T3
-R4
-S1
-R0
-w1693525454
-8/home/guille/famaf/arqui/SingleCycleProcessor/flopr.sv
-F/home/guille/famaf/arqui/SingleCycleProcessor/flopr.sv
+w1693580623
+8/home/guille/famaf/arqui/SingleCycleProcessor/alu.sv
+F/home/guille/famaf/arqui/SingleCycleProcessor/alu.sv
 !i122 3
-L0 1 18
+L0 1 40
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/guille/famaf/arqui/SingleCycleProcessor/flopr.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/flopr.sv|
+!s107 /home/guille/famaf/arqui/SingleCycleProcessor/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/alu.sv|
+!i113 1
+R8
+R9
+R10
+vexecute
+R1
+R2
+!i10b 1
+!s100 0;3@b@PK73O5B69_BU5NV3
+R3
+IV_94DC^P`4LGib>T`OQVh3
+R4
+S1
+R0
+w1694189905
+8/home/guille/famaf/arqui/SingleCycleProcessor/execute.sv
+F/home/guille/famaf/arqui/SingleCycleProcessor/execute.sv
+!i122 0
+L0 1 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/execute.sv|
+!i113 1
+R8
+R9
+R10
+vexecute_tb
+R1
+R2
+!i10b 1
+!s100 a8Wg2a5z02l94LeRXU]S33
+R3
+I6:M7E:hO70WTPdGKJLcSA2
+R4
+S1
+R0
+w1694190435
+8/home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv
+F/home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv
+!i122 4
+L0 1 49
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv|
 !i113 1
 R8
 R9
@@ -126,7 +126,7 @@ R0
 w1694034377
 8/home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv
 F/home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv
-!i122 0
+!i122 1
 R5
 R6
 r1
