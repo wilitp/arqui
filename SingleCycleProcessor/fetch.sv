@@ -8,8 +8,10 @@ module fetch #(int N=64)(
 
   logic[N-1:0] next_addr;
   logic[N-1:0] out_from_mux;
+  logic[N-1:0] cuatro = 'd4;
 
-  adder #(N) Adder(imem_addr_F, N-1'd4, next_addr);
+
+  adder #(N) Adder(imem_addr_F, cuatro, next_addr);
   mux2 #(N) Mux(next_addr, PCBranch_F, PCSrc_F, out_from_mux);
   flopr #(N) PC(clk, out_from_mux, reset, imem_addr_F);
   

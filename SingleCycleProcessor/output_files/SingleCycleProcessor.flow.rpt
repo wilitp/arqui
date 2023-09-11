@@ -1,5 +1,5 @@
 Flow report for SingleCycleProcessor
-Mon Sep 11 18:53:17 2023
+Mon Sep 11 19:13:59 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,13 +41,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Sep 11 18:53:17 2023       ;
+; Flow Status                        ; Successful - Mon Sep 11 19:13:59 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; SingleCycleProcessor                        ;
 ; Top-level Entity Name              ; processor_arm                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 12,201                                      ;
-;     Total combinational functions  ; 6,260                                       ;
+; Total logic elements               ; 12,210                                      ;
+;     Total combinational functions  ; 6,269                                       ;
 ;     Dedicated logic registers      ; 6,144                                       ;
 ; Total registers                    ; 6144                                        ;
 ; Total pins                         ; 132                                         ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 09/11/2023 18:52:04  ;
+; Start date & time ; 09/11/2023 19:12:10  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; SingleCycleProcessor ;
 +-------------------+----------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+----------------------+---------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value        ; Entity Name   ; Section Id                        ;
 +--------------------------------------+----------------------------------------+----------------------+---------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 202972269626745.169446912406632        ; --                   ; --            ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 202972269626745.169447033008881        ; --                   ; --            ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --            ; regfile_tb                        ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --            ; imem_tb                           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --            ; fetch_tb                          ;
@@ -135,8 +135,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:12     ; 1.0                     ; 634 MB              ; 00:01:26                           ;
-; Total                ; 00:01:12     ; --                      ; --                  ; 00:01:26                           ;
+; Analysis & Synthesis ; 00:01:47     ; 1.0                     ; 633 MB              ; 00:02:17                           ;
+; Total                ; 00:01:47     ; --                      ; --                  ; 00:02:17                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

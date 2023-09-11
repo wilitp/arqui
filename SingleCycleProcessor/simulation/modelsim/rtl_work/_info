@@ -12,7 +12,7 @@ cModel Technology
 Z0 d/home/guille/famaf/arqui/SingleCycleProcessor/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1694469218
+Z2 !s110 1694470939
 !i10b 1
 !s100 ljGRG:be6f]XM:<55^Z_:1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -29,7 +29,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1694469218.000000
+Z7 !s108 1694470939.000000
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/adder.sv|
 !i113 1
@@ -38,7 +38,7 @@ Z9 !s92 -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor
 Z10 tCvgOpt 0
 valu
 R1
-Z11 !s110 1694469219
+R2
 !i10b 1
 !s100 4b_7?O^mz1XF0I8`<O]^l0
 R3
@@ -46,7 +46,7 @@ II:d6TJ`2[3^OBjzz=]<Fe2
 R4
 S1
 R0
-w1693580623
+w1694469405
 8/home/guille/famaf/arqui/SingleCycleProcessor/alu.sv
 F/home/guille/famaf/arqui/SingleCycleProcessor/alu.sv
 !i122 13
@@ -55,7 +55,7 @@ R6
 r1
 !s85 0
 31
-Z12 !s108 1694469219.000000
+R7
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/alu.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/alu.sv|
 !i113 1
@@ -64,7 +64,7 @@ R9
 R10
 valudec
 R1
-R2
+Z11 !s110 1694470938
 !i10b 1
 !s100 :;H73aVU>X;gEYYfBOVnz2
 R3
@@ -81,7 +81,7 @@ R6
 r1
 !s85 0
 31
-R7
+Z12 !s108 1694470938.000000
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/aludec.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules|/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/aludec.sv|
 !i113 1
@@ -90,7 +90,7 @@ Z13 !s92 -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor/pa
 R10
 vcontroller
 R1
-R2
+R11
 !i10b 1
 !s100 aPJ8KWRl5DC0DV3[6oEG63
 R3
@@ -107,7 +107,7 @@ R6
 r1
 !s85 0
 31
-R7
+R12
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/controller.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules|/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/controller.sv|
 !i113 1
@@ -116,7 +116,7 @@ R13
 R10
 vdatapath
 R1
-R2
+R11
 !i10b 1
 !s100 NGWT``[B?aQfDWRFmE@b20
 R3
@@ -133,7 +133,7 @@ R6
 r1
 !s85 0
 31
-R7
+R12
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/datapath.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules|/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/datapath.sv|
 !i113 1
@@ -142,7 +142,7 @@ R13
 R10
 vdecode
 R1
-R2
+R11
 !i10b 1
 !s100 ez[Sj6NLDB;VJc@X`e1Ui0
 R3
@@ -159,7 +159,7 @@ R6
 r1
 !s85 0
 31
-R7
+R12
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/decode.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules|/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/decode.sv|
 !i113 1
@@ -183,9 +183,9 @@ Vbn3b0?2?3c<CA[;DdzR8^2
 !s100 9UhgcemjCI:F<bA>GRZY=0
 Z22 OV;C;2020.1;71
 33
-R11
+R2
 !i10b 1
-R12
+R7
 Z23 !s90 -reportprogress|300|-2008|-work|work|/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/dmem.vhd|
 Z24 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/dmem.vhd|
 !i113 1
@@ -205,9 +205,9 @@ V=O7n119;8j^;GdX6mLeKi1
 !s100 >kmZdFP2z1CleM18W]LCN1
 R22
 33
-R11
+R2
 !i10b 1
-R12
+R7
 R23
 R24
 !i113 1
@@ -217,13 +217,13 @@ vexecute
 R1
 R2
 !i10b 1
-!s100 dI_oMJFlYL@99m;n7k67e1
+!s100 <M7GOh@8I6MH?fESG`zN@0
 R3
-ICYnDQ>HA_^JhTGbZXH=FS3
+IPh_a8LDPI@bKLJA_77c2l2
 R4
 S1
 R0
-w1694299243
+w1694470169
 8/home/guille/famaf/arqui/SingleCycleProcessor/execute.sv
 F/home/guille/famaf/arqui/SingleCycleProcessor/execute.sv
 !i122 7
@@ -232,7 +232,7 @@ R6
 r1
 !s85 0
 31
-R7
+R12
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/execute.sv|
 !i113 1
@@ -241,19 +241,19 @@ R9
 R10
 vfetch
 R1
-R11
+R2
 !i10b 1
-!s100 ;BQUblG?K506maH5OMfW[2
+!s100 iHinV[<CS5;I6JSba>>Zo1
 R3
-I;c__8zLNz?adL2bBL>mZD2
+INg^N5f=KQ;QH6fdRlZh>I2
 R4
 S1
 R0
-w1694297881
+w1694469936
 8/home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv
 F/home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv
 !i122 10
-Z27 L0 1 16
+Z27 L0 1 18
 R6
 r1
 !s85 0
@@ -267,7 +267,7 @@ R9
 R10
 vflopr
 R1
-R11
+R2
 !i10b 1
 !s100 J3f7VI?9Oni_fc5AJ_QaH0
 R3
@@ -279,12 +279,12 @@ w1693525454
 8/home/guille/famaf/arqui/SingleCycleProcessor/flopr.sv
 F/home/guille/famaf/arqui/SingleCycleProcessor/flopr.sv
 !i122 11
-L0 1 18
+R27
 R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/flopr.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/flopr.sv|
 !i113 1
@@ -293,24 +293,24 @@ R9
 R10
 vimem
 R1
-R11
+R2
 !i10b 1
-!s100 E@WnTWlGF32=eGfLXbl3D1
+!s100 =ocObSODe>gzVe_AcfaBF3
 R3
-I2<j@OFD4S:4j4IFR^0oC20
+I_6PJDK`bnIZIi8X4i06RZ1
 R4
 S1
 R0
-w1694298584
+w1694470927
 8/home/guille/famaf/arqui/SingleCycleProcessor/imem.sv
 F/home/guille/famaf/arqui/SingleCycleProcessor/imem.sv
 !i122 14
-L0 1 29
+L0 1 67
 R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/imem.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/imem.sv|
 !i113 1
@@ -319,7 +319,7 @@ R9
 R10
 vmaindec
 R1
-R11
+R2
 !i10b 1
 !s100 2;Jh4_0J3LIfUf]:hRSZY1
 R3
@@ -336,7 +336,7 @@ R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/maindec.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/maindec.sv|
 !i113 1
@@ -345,7 +345,7 @@ R9
 R10
 vmemory
 R1
-R2
+R11
 !i10b 1
 !s100 LP[7i;OQNRmgDe[<ZEPcc0
 R3
@@ -362,7 +362,7 @@ R6
 r1
 !s85 0
 31
-R7
+R12
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/memory.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules|/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/memory.sv|
 !i113 1
@@ -397,7 +397,7 @@ R9
 R10
 vprocessor_arm
 R1
-R2
+R11
 !i10b 1
 !s100 ZeNRfI>jjlb:;YUZbb8A73
 R3
@@ -414,7 +414,7 @@ R6
 r1
 !s85 0
 31
-R7
+R12
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_arm.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules|/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_arm.sv|
 !i113 1
@@ -423,7 +423,7 @@ R13
 R10
 vprocessor_tb
 R1
-R11
+!s110 1694470940
 !i10b 1
 !s100 55_fQBhQ<0gi[l2XV>J8d0
 R3
@@ -440,7 +440,7 @@ R6
 r1
 !s85 0
 31
-R12
+!s108 1694470940.000000
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules|/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_tb.sv|
 !i113 1
@@ -449,7 +449,7 @@ R13
 R10
 vregfile
 R1
-R11
+R2
 !i10b 1
 !s100 jTL7e7>1MM]EUHAlSH_GB2
 R3
@@ -466,7 +466,7 @@ R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/regfile.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/regfile.sv|
 !i113 1
@@ -475,7 +475,7 @@ R9
 R10
 vsignext
 R1
-R11
+R2
 !i10b 1
 !s100 l2P@7UO1`VnWnZ5k1lD8I0
 R3
@@ -487,12 +487,12 @@ w1693525987
 8/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv
 F/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv
 !i122 12
-R27
+L0 1 16
 R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor|/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv|
 !i113 1
@@ -501,7 +501,7 @@ R9
 R10
 vwriteback
 R1
-R2
+R11
 !i10b 1
 !s100 lem0cZaoaK<4K2n`WO?nY2
 R3
@@ -518,7 +518,7 @@ R6
 r1
 !s85 0
 31
-R7
+R12
 !s107 /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/writeback.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules|/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/writeback.sv|
 !i113 1

@@ -18,7 +18,7 @@ module execute #(int N=64)(
 
   alu Alu(readData1_E, aluOperand, AluControl, zero_E, aluResult_E);
 
-  adder #(N-1) Add(PC_E, signImm_E << 2, PCBranch_E);
+  adder #(N) Add(PC_E, signImm_E << 2, PCBranch_E);
 
-  mux2 #(N-1) Mux(readData2_E, signImm_E, AluSrc, aluOperand);
+  mux2 #(N) Mux(readData2_E, signImm_E, AluSrc, aluOperand);
 endmodule

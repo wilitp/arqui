@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SingleCycleProcessor
-Mon Sep 11 18:53:17 2023
+Mon Sep 11 19:13:59 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -30,13 +30,12 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  22. Parameter Settings for User Entity Instance: datapath:dp|writeback:WRITEBACK
  23. Parameter Settings for User Entity Instance: datapath:dp|writeback:WRITEBACK|mux2:MtoRmux
  24. Parameter Settings for User Entity Instance: imem:instrMem
- 25. Port Connectivity Checks: "datapath:dp|execute:EXECUTE|mux2:Mux"
- 26. Port Connectivity Checks: "datapath:dp|execute:EXECUTE|adder:Add"
- 27. Port Connectivity Checks: "datapath:dp|fetch:FETCH|adder:Adder"
- 28. Port Connectivity Checks: "datapath:dp"
- 29. Post-Synthesis Netlist Statistics for Top Partition
- 30. Elapsed Time Per Partition
- 31. Analysis & Synthesis Messages
+ 25. Port Connectivity Checks: "datapath:dp|execute:EXECUTE|adder:Add"
+ 26. Port Connectivity Checks: "datapath:dp|fetch:FETCH|adder:Adder"
+ 27. Port Connectivity Checks: "datapath:dp"
+ 28. Post-Synthesis Netlist Statistics for Top Partition
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
 
 
 
@@ -63,13 +62,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Sep 11 18:53:17 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 11 19:13:59 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; SingleCycleProcessor                        ;
 ; Top-level Entity Name              ; processor_arm                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 12,201                                      ;
-;     Total combinational functions  ; 6,260                                       ;
+; Total logic elements               ; 12,210                                      ;
+;     Total combinational functions  ; 6,269                                       ;
 ;     Dedicated logic registers      ; 6,144                                       ;
 ; Total registers                    ; 6144                                        ;
 ; Total pins                         ; 132                                         ;
@@ -179,9 +178,9 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.4%      ;
-;     Processor 3            ;   0.8%      ;
-;     Processor 4            ;   0.8%      ;
+;     Processor 2            ;   1.3%      ;
+;     Processor 3            ;   0.7%      ;
+;     Processor 4            ;   0.7%      ;
 +----------------------------+-------------+
 
 
@@ -216,17 +215,17 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 12,201         ;
+; Estimated Total logic elements              ; 12,210         ;
 ;                                             ;                ;
-; Total combinational functions               ; 6260           ;
+; Total combinational functions               ; 6269           ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 5685           ;
-;     -- 3 input functions                    ; 490            ;
-;     -- <=2 input functions                  ; 85             ;
+;     -- 4 input functions                    ; 5797           ;
+;     -- 3 input functions                    ; 389            ;
+;     -- <=2 input functions                  ; 83             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 6190           ;
-;     -- arithmetic mode                      ; 70             ;
+;     -- normal mode                          ; 6195           ;
+;     -- arithmetic mode                      ; 74             ;
 ;                                             ;                ;
 ; Total registers                             ; 6144           ;
 ;     -- Dedicated logic registers            ; 6144           ;
@@ -238,8 +237,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 6144           ;
-; Total fan-out                               ; 42997          ;
-; Average fan-out                             ; 3.39           ;
+; Total fan-out                               ; 43138          ;
+; Average fan-out                             ; 3.40           ;
 +---------------------------------------------+----------------+
 
 
@@ -248,22 +247,22 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Entity Name   ; Library Name ;
 +------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+---------------+--------------+
-; |processor_arm               ; 6260 (0)            ; 6144 (0)                  ; 0           ; 0            ; 0       ; 0         ; 132  ; 0            ; |processor_arm                                              ; processor_arm ; work         ;
-;    |controller:c|            ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|controller:c                                 ; controller    ; work         ;
-;       |aludec:decAlu|        ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|controller:c|aludec:decAlu                   ; aludec        ; work         ;
+; |processor_arm               ; 6269 (0)            ; 6144 (0)                  ; 0           ; 0            ; 0       ; 0         ; 132  ; 0            ; |processor_arm                                              ; processor_arm ; work         ;
+;    |controller:c|            ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|controller:c                                 ; controller    ; work         ;
+;       |aludec:decAlu|        ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|controller:c|aludec:decAlu                   ; aludec        ; work         ;
 ;       |maindec:decPpal|      ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|controller:c|maindec:decPpal                 ; maindec       ; work         ;
-;    |datapath:dp|             ; 6069 (0)            ; 2048 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp                                  ; datapath      ; work         ;
-;       |decode:DECODE|        ; 2823 (0)            ; 2048 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|decode:DECODE                    ; decode        ; work         ;
+;    |datapath:dp|             ; 6079 (0)            ; 2048 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp                                  ; datapath      ; work         ;
+;       |decode:DECODE|        ; 2825 (0)            ; 2048 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|decode:DECODE                    ; decode        ; work         ;
 ;          |mux2:ra2mux|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|decode:DECODE|mux2:ra2mux        ; mux2          ; work         ;
-;          |regfile:registers| ; 2812 (2812)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|decode:DECODE|regfile:registers  ; regfile       ; work         ;
-;          |signext:ext|       ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|decode:DECODE|signext:ext        ; signext       ; work         ;
+;          |regfile:registers| ; 2813 (2813)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|decode:DECODE|regfile:registers  ; regfile       ; work         ;
+;          |signext:ext|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|decode:DECODE|signext:ext        ; signext       ; work         ;
 ;       |execute:EXECUTE|      ; 463 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|execute:EXECUTE                  ; execute       ; work         ;
 ;          |adder:Add|         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|execute:EXECUTE|adder:Add        ; adder         ; work         ;
-;          |alu:Alu|           ; 385 (385)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|execute:EXECUTE|alu:Alu          ; alu           ; work         ;
-;          |mux2:Mux|          ; 72 (72)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|execute:EXECUTE|mux2:Mux         ; mux2          ; work         ;
-;       |fetch:FETCH|          ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|fetch:FETCH                      ; fetch         ; work         ;
-;          |adder:Adder|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|fetch:FETCH|adder:Adder          ; adder         ; work         ;
-;          |flopr:PC|          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|fetch:FETCH|flopr:PC             ; flopr         ; work         ;
+;          |alu:Alu|           ; 387 (387)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|execute:EXECUTE|alu:Alu          ; alu           ; work         ;
+;          |mux2:Mux|          ; 70 (70)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|execute:EXECUTE|mux2:Mux         ; mux2          ; work         ;
+;       |fetch:FETCH|          ; 17 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|fetch:FETCH                      ; fetch         ; work         ;
+;          |adder:Adder|       ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|fetch:FETCH|adder:Adder          ; adder         ; work         ;
+;          |flopr:PC|          ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|fetch:FETCH|flopr:PC             ; flopr         ; work         ;
 ;       |memory:MEMORY|        ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|memory:MEMORY                    ; memory        ; work         ;
 ;       |writeback:WRITEBACK|  ; 2752 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|writeback:WRITEBACK              ; writeback     ; work         ;
 ;          |mux2:MtoRmux|      ; 2752 (2752)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_arm|datapath:dp|writeback:WRITEBACK|mux2:MtoRmux ; mux2          ; work         ;
@@ -279,17 +278,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Logic Cell Name                                        ;    ;
 +--------------------------------------------------------+----+
 ; datapath:dp|fetch:FETCH|adder:Adder|out[6]~1           ;    ;
-; datapath:dp|execute:EXECUTE|adder:Add|out[6]~1         ;    ;
+; datapath:dp|execute:EXECUTE|adder:Add|out[6]~2         ;    ;
 ; datapath:dp|memory:MEMORY|PCSrc_M~0                    ;    ;
 ; datapath:dp|fetch:FETCH|adder:Adder|out[4]~3           ;    ;
-; datapath:dp|execute:EXECUTE|adder:Add|out[4]~3         ;    ;
+; datapath:dp|execute:EXECUTE|adder:Add|out[4]~4         ;    ;
 ; datapath:dp|fetch:FETCH|adder:Adder|out[2]~5           ;    ;
-; datapath:dp|execute:EXECUTE|adder:Add|out[2]~5         ;    ;
-; datapath:dp|fetch:FETCH|flopr:PC|q[7]~0                ;    ;
+; datapath:dp|execute:EXECUTE|adder:Add|out[2]~6         ;    ;
+; datapath:dp|fetch:FETCH|flopr:PC|q[7]~1                ;    ;
 ; datapath:dp|fetch:FETCH|adder:Adder|out[3]~4           ;    ;
-; datapath:dp|execute:EXECUTE|adder:Add|out[3]~4         ;    ;
+; datapath:dp|execute:EXECUTE|adder:Add|out[3]~5         ;    ;
 ; datapath:dp|fetch:FETCH|adder:Adder|out[5]~2           ;    ;
-; datapath:dp|execute:EXECUTE|adder:Add|out[5]~2         ;    ;
+; datapath:dp|execute:EXECUTE|adder:Add|out[5]~3         ;    ;
 ; Number of logic cells representing combinational loops ; 12 ;
 +--------------------------------------------------------+----+
 Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -315,8 +314,8 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
-; 3:1                ; 63 bits   ; 126 LEs       ; 126 LEs              ; 0 LEs                  ; No         ; |processor_arm|datapath:dp|fetch:FETCH|flopr:PC|q[50]             ;
-; 8:1                ; 63 bits   ; 315 LEs       ; 252 LEs              ; 63 LEs                 ; No         ; |processor_arm|datapath:dp|execute:EXECUTE|alu:Alu|Mux18          ;
+; 3:1                ; 64 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |processor_arm|datapath:dp|fetch:FETCH|flopr:PC|q[50]             ;
+; 8:1                ; 64 bits   ; 320 LEs       ; 256 LEs              ; 64 LEs                 ; No         ; |processor_arm|datapath:dp|execute:EXECUTE|alu:Alu|Mux16          ;
 ; 65:1               ; 64 bits   ; 2752 LEs      ; 2752 LEs             ; 0 LEs                  ; No         ; |processor_arm|datapath:dp|writeback:WRITEBACK|mux2:MtoRmux|y[13] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
 
@@ -416,7 +415,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                      ;
 +----------------+-------+-----------------------------------------------------------+
-; N              ; 63    ; Signed Integer                                            ;
+; N              ; 64    ; Signed Integer                                            ;
 +----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -426,7 +425,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                     ;
 +----------------+-------+----------------------------------------------------------+
-; N              ; 63    ; Signed Integer                                           ;
+; N              ; 64    ; Signed Integer                                           ;
 +----------------+-------+----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -461,39 +460,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:dp|execute:EXECUTE|mux2:Mux"                                                                                                                                              ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; d0   ; Input  ; Warning  ; Input port expression (64 bits) is wider than the input port (63 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; d1   ; Input  ; Warning  ; Input port expression (64 bits) is wider than the input port (63 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; y    ; Output ; Warning  ; Output or bidir port (63 bits) is smaller than the port expression (64 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND.            ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|execute:EXECUTE|adder:Add" ;
++---------+-------+----------+--------------------------------------+
+; Port    ; Type  ; Severity ; Details                              ;
++---------+-------+----------+--------------------------------------+
+; b[1..0] ; Input ; Info     ; Stuck at GND                         ;
++---------+-------+----------+--------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:dp|execute:EXECUTE|adder:Add"                                                                                                                                                ;
-+---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; a       ; Input  ; Warning  ; Input port expression (64 bits) is wider than the input port (63 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; b       ; Input  ; Warning  ; Input port expression (64 bits) is wider than the input port (63 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; b[1..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out     ; Output ; Warning  ; Output or bidir port (63 bits) is smaller than the port expression (64 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND.            ;
-+---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:dp|fetch:FETCH|adder:Adder"                                                                                                             ;
-+----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                                                                                                                       ;
-+----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; b        ; Input ; Warning  ; Input port expression (32 bits) is smaller than the input port (64 bits) it drives.  Extra input bit(s) "b[63..32]" will be connected to GND. ;
-; b[31..7] ; Input ; Info     ; Stuck at GND                                                                                                                                  ;
-; b[5..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                  ;
-; b[38]    ; Input ; Info     ; Stuck at VCC                                                                                                                                  ;
-+----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|fetch:FETCH|adder:Adder" ;
++----------+-------+----------+-----------------------------------+
+; Port     ; Type  ; Severity ; Details                           ;
++----------+-------+----------+-----------------------------------+
+; b[63..3] ; Input ; Info     ; Stuck at GND                      ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                      ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                      ;
++----------+-------+----------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -514,17 +498,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 132                         ;
 ; cycloneiii_ff         ; 6144                        ;
 ;     ENA               ; 6144                        ;
-; cycloneiii_lcell_comb ; 6260                        ;
-;     arith             ; 70                          ;
-;         3 data inputs ; 70                          ;
-;     normal            ; 6190                        ;
+; cycloneiii_lcell_comb ; 6269                        ;
+;     arith             ; 74                          ;
+;         3 data inputs ; 74                          ;
+;     normal            ; 6195                        ;
 ;         1 data inputs ; 76                          ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 420                         ;
-;         4 data inputs ; 5685                        ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 315                         ;
+;         4 data inputs ; 5797                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 29.30                       ;
-; Average LUT depth     ; 16.48                       ;
+; Max LUT depth         ; 29.80                       ;
+; Average LUT depth     ; 16.75                       ;
 +-----------------------+-----------------------------+
 
 
@@ -533,7 +517,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:03     ;
+; Top            ; 00:01:28     ;
 +----------------+--------------+
 
 
@@ -543,7 +527,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Sep 11 18:52:04 2023
+    Info: Processing started: Mon Sep 11 19:12:10 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SingleCycleProcessor -c SingleCycleProcessor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -574,7 +558,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
     Info (12023): Found entity 1: mux2 File: /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
     Info (12023): Found entity 1: adder File: /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv Line: 1
-Warning (10229): Verilog HDL Expression warning at fetch.sv(12): truncated literal to match 1 bits File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file fetch.sv
     Info (12023): Found entity 1: fetch File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fetch_tb.sv
@@ -609,40 +592,35 @@ Info (12128): Elaborating entity "maindec" for hierarchy "controller:c|maindec:d
 Info (12128): Elaborating entity "aludec" for hierarchy "controller:c|aludec:decAlu" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/controller.sv Line: 23
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:dp" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_arm.sv Line: 42
 Info (12128): Elaborating entity "fetch" for hierarchy "datapath:dp|fetch:FETCH" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/datapath.sv Line: 28
-Info (12128): Elaborating entity "adder" for hierarchy "datapath:dp|fetch:FETCH|adder:Adder" File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 12
-Info (12128): Elaborating entity "mux2" for hierarchy "datapath:dp|fetch:FETCH|mux2:Mux" File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 13
-Info (12128): Elaborating entity "flopr" for hierarchy "datapath:dp|fetch:FETCH|flopr:PC" File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 14
+Info (12128): Elaborating entity "adder" for hierarchy "datapath:dp|fetch:FETCH|adder:Adder" File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 14
+Info (12128): Elaborating entity "mux2" for hierarchy "datapath:dp|fetch:FETCH|mux2:Mux" File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 15
+Info (12128): Elaborating entity "flopr" for hierarchy "datapath:dp|fetch:FETCH|flopr:PC" File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 16
 Info (12128): Elaborating entity "decode" for hierarchy "datapath:dp|decode:DECODE" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/datapath.sv Line: 39
 Info (12128): Elaborating entity "mux2" for hierarchy "datapath:dp|decode:DECODE|mux2:ra2mux" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/decode.sv Line: 11
 Info (12128): Elaborating entity "regfile" for hierarchy "datapath:dp|decode:DECODE|regfile:registers" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/decode.sv Line: 14
 Info (12128): Elaborating entity "signext" for hierarchy "datapath:dp|decode:DECODE|signext:ext" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/decode.sv Line: 17
 Info (12128): Elaborating entity "execute" for hierarchy "datapath:dp|execute:EXECUTE" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/datapath.sv Line: 52
 Info (12128): Elaborating entity "alu" for hierarchy "datapath:dp|execute:EXECUTE|alu:Alu" File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 19
-Info (12128): Elaborating entity "adder" for hierarchy "datapath:dp|execute:EXECUTE|adder:Add" File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 21
-Info (12128): Elaborating entity "mux2" for hierarchy "datapath:dp|execute:EXECUTE|mux2:Mux" File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 23
 Info (12128): Elaborating entity "memory" for hierarchy "datapath:dp|memory:MEMORY" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/datapath.sv Line: 58
 Info (12128): Elaborating entity "writeback" for hierarchy "datapath:dp|writeback:WRITEBACK" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/datapath.sv Line: 65
 Info (12128): Elaborating entity "imem" for hierarchy "imem:instrMem" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_arm.sv Line: 46
 Warning (10030): Net "ROM[47..63]" at imem.sv(5) has no driver or initial value, using a default initial value '0' File: /home/guille/famaf/arqui/SingleCycleProcessor/imem.sv Line: 5
 Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dataMem" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_arm.sv Line: 55
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "datapath:dp|execute:EXECUTE|aluOperand[63]" is missing source, defaulting to GND File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 15
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "datapath:dp|decode:DECODE|regfile:registers|registers" is uninferred due to asynchronous read logic File: /home/guille/famaf/arqui/SingleCycleProcessor/regfile.sv Line: 20
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "dump" File: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_arm.sv Line: 7
-Info (21057): Implemented 12461 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 12470 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 129 output pins
-    Info (21061): Implemented 12329 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 634 megabytes
-    Info: Processing ended: Mon Sep 11 18:53:17 2023
-    Info: Elapsed time: 00:01:13
-    Info: Total CPU time (on all processors): 00:01:27
+    Info (21061): Implemented 12338 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 633 megabytes
+    Info: Processing ended: Mon Sep 11 19:13:59 2023
+    Info: Elapsed time: 00:01:49
+    Info: Total CPU time (on all processors): 00:02:19
 
 
