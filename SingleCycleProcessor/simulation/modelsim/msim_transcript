@@ -1,4 +1,4 @@
-# do SingleCycleProcessor_run_msim_rtl_verilog.do
+# do SingleCycleProcessor_run_msim_rtl_systemverilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -9,481 +9,270 @@
 # Copying /home/guille/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules {/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/writeback.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:38 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules" /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/writeback.sv 
+# -- Compiling module writeback
+# 
+# Top level modules:
+# 	writeback
+# End time: 18:53:38 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules {/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_arm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:38 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules" /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_arm.sv 
+# -- Compiling module processor_arm
+# 
+# Top level modules:
+# 	processor_arm
+# End time: 18:53:38 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules {/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:38 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules" /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 18:53:38 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules {/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/decode.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:38 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules" /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/decode.sv 
+# -- Compiling module decode
+# 
+# Top level modules:
+# 	decode
+# End time: 18:53:38 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules {/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:38 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules" /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 18:53:38 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules {/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:38 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules" /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 18:53:38 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules {/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/aludec.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:38 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules" /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/aludec.sv 
+# -- Compiling module aludec
+# 
+# Top level modules:
+# 	aludec
+# End time: 18:53:38 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/execute.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:16:44 on Sep 08,2023
+# Start time: 18:53:38 on Sep 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv 
 # -- Compiling module execute
 # 
 # Top level modules:
 # 	execute
-# End time: 13:16:44 on Sep 08,2023, Elapsed time: 0:00:00
+# End time: 18:53:38 on Sep 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:16:44 on Sep 08,2023
+# Start time: 18:53:38 on Sep 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv 
 # -- Compiling module mux2
 # 
 # Top level modules:
 # 	mux2
-# End time: 13:16:44 on Sep 08,2023, Elapsed time: 0:00:00
+# End time: 18:53:38 on Sep 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:16:44 on Sep 08,2023
+# Start time: 18:53:38 on Sep 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 13:16:44 on Sep 08,2023, Elapsed time: 0:00:00
+# End time: 18:53:38 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:38 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv 
+# -- Compiling module fetch
+# 
+# Top level modules:
+# 	fetch
+# End time: 18:53:39 on Sep 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:39 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 18:53:39 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/signext.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:39 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/signext.sv 
+# -- Compiling module signext
+# 
+# Top level modules:
+# 	signext
+# End time: 18:53:39 on Sep 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:16:44 on Sep 08,2023
+# Start time: 18:53:39 on Sep 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 13:16:44 on Sep 08,2023, Elapsed time: 0:00:00
+# End time: 18:53:39 on Sep 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv}
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/imem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:16:44 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv 
-# -- Compiling module execute_tb
+# Start time: 18:53:39 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/imem.sv 
+# -- Compiling module imem
 # 
 # Top level modules:
-# 	execute_tb
-# End time: 13:16:44 on Sep 08,2023, Elapsed time: 0:00:00
+# 	imem
+# End time: 18:53:39 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:39 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:53:39 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/maindec.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:39 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/maindec.sv 
+# -- Compiling module maindec
+# 
+# Top level modules:
+# 	maindec
+# End time: 18:53:39 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/dmem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:39 on Sep 11,2023
+# vcom -reportprogress 300 -2008 -work work /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/dmem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dmem
+# -- Compiling architecture behave of dmem
+# ** Warning: /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/dmem.vhd(30): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:53:39 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules {/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:53:39 on Sep 11,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules" /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_tb.sv 
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:53:39 on Sep 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  execute_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" execute_tb 
-# Start time: 13:16:44 on Sep 08,2023
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  processor_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" processor_tb 
+# Start time: 18:53:39 on Sep 11,2023
 # Loading sv_std.std
-# Loading work.execute_tb
-# Loading work.execute
-# Loading work.alu
+# Loading work.processor_tb
+# Loading work.processor_arm
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.fetch
 # Loading work.adder
 # Loading work.mux2
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Add'.  Expected 3, found 2.
-#    Time: 0 ps  Iteration: 0  Instance: /execute_tb/dut/Add File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 20
-# ** Warning: (vsim-3722) /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv(20): [TFMPC] - Missing connection for port 'out'.
+# Loading work.flopr
+# Loading work.decode
+# Loading work.regfile
+# Loading work.signext
+# Loading work.execute
+# Loading work.alu
+# Loading work.memory
+# Loading work.writeback
+# Loading work.imem
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.numeric_std(body)
+# Loading work.dmem(behave)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb/dut/dp/FETCH/Adder File: /home/guille/famaf/arqui/SingleCycleProcessor/fetch.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (63) does not match connection size (64) for port 'a'. The port definition is at: /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb/dut/dp/EXECUTE/Add File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (63) does not match connection size (64) for port 'b'. The port definition is at: /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb/dut/dp/EXECUTE/Add File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (63) does not match connection size (64) for port 'out'. The port definition is at: /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb/dut/dp/EXECUTE/Add File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (63) does not match connection size (64) for port 'd0'. The port definition is at: /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb/dut/dp/EXECUTE/Mux File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (63) does not match connection size (64) for port 'd1'. The port definition is at: /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb/dut/dp/EXECUTE/Mux File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (63) does not match connection size (64) for port 'y'. The port definition is at: /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb/dut/dp/EXECUTE/Mux File: /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv Line: 23
 # 
 # add wave *
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: guille  Hostname: guille-VivoBook-ASUSLaptop-X509  ProcessID: 6528
+#           Attempting to use alternate WLF file "./wlftqNGtfl".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqNGtfl
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+# ** Note: fin del testdump
+#    Time: 4020 ps  Iteration: 1  Instance: /processor_tb/dut/dataMem
+# ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_tb.sv(26)
+#    Time: 24020 ps  Iteration: 0  Instance: /processor_tb
+# Break in Module processor_tb at /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_tb.sv line 26
 # 
 # stdin: <EOF>
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/execute.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:19:11 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv 
-# -- Compiling module execute
-# 
-# Top level modules:
-# 	execute
-# End time: 13:19:11 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:19:11 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv 
-# -- Compiling module mux2
-# 
-# Top level modules:
-# 	mux2
-# End time: 13:19:11 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:19:11 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv 
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# End time: 13:19:11 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/alu.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:19:11 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/alu.sv 
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# End time: 13:19:11 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:19:11 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv 
-# -- Compiling module execute_tb
-# 
-# Top level modules:
-# 	execute_tb
-# End time: 13:19:11 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  execute_tb
-# End time: 13:19:12 on Sep 08,2023, Elapsed time: 0:02:28
-# Errors: 0, Warnings: 2
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" execute_tb 
-# Start time: 13:19:12 on Sep 08,2023
-# Loading sv_std.std
-# Loading work.execute_tb
-# Loading work.execute
-# Loading work.alu
-# Loading work.adder
-# Loading work.mux2
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-add wave -position insertpoint sim:/execute_tb/dut/*
-# Load canceled
-add wave -position insertpoint sim:/execute_tb/dut/*
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/execute.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:21:33 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv 
-# -- Compiling module execute
-# 
-# Top level modules:
-# 	execute
-# End time: 13:21:33 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:21:33 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv 
-# -- Compiling module mux2
-# 
-# Top level modules:
-# 	mux2
-# End time: 13:21:33 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:21:33 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv 
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# End time: 13:21:33 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/alu.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:21:33 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/alu.sv 
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# End time: 13:21:33 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:21:33 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv 
-# -- Compiling module execute_tb
-# 
-# Top level modules:
-# 	execute_tb
-# End time: 13:21:33 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  execute_tb
-# End time: 13:21:34 on Sep 08,2023, Elapsed time: 0:02:22
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" execute_tb 
-# Start time: 13:21:34 on Sep 08,2023
-# Loading sv_std.std
-# Loading work.execute_tb
-# Loading work.execute
-# Loading work.alu
-# Loading work.adder
-# Loading work.mux2
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/execute.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:23:53 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv 
-# -- Compiling module execute
-# 
-# Top level modules:
-# 	execute
-# End time: 13:23:53 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:23:53 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv 
-# -- Compiling module mux2
-# 
-# Top level modules:
-# 	mux2
-# End time: 13:23:53 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:23:53 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv 
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# End time: 13:23:53 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/alu.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:23:53 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/alu.sv 
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# End time: 13:23:53 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:23:53 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv 
-# -- Compiling module execute_tb
-# 
-# Top level modules:
-# 	execute_tb
-# End time: 13:23:53 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  execute_tb
-# End time: 13:23:54 on Sep 08,2023, Elapsed time: 0:02:20
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" execute_tb 
-# Start time: 13:23:54 on Sep 08,2023
-# Loading sv_std.std
-# Loading work.execute_tb
-# Loading work.execute
-# Loading work.alu
-# Loading work.adder
-# Loading work.mux2
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/execute.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:26:30 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv 
-# -- Compiling module execute
-# 
-# Top level modules:
-# 	execute
-# End time: 13:26:30 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:26:30 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv 
-# -- Compiling module mux2
-# 
-# Top level modules:
-# 	mux2
-# End time: 13:26:30 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:26:30 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv 
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# End time: 13:26:30 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/alu.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:26:30 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/alu.sv 
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# End time: 13:26:30 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:26:30 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv 
-# -- Compiling module execute_tb
-# 
-# Top level modules:
-# 	execute_tb
-# End time: 13:26:30 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  execute_tb
-# End time: 13:26:31 on Sep 08,2023, Elapsed time: 0:02:37
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" execute_tb 
-# Start time: 13:26:31 on Sep 08,2023
-# Loading sv_std.std
-# Loading work.execute_tb
-# Loading work.execute
-# Loading work.alu
-# Loading work.adder
-# Loading work.mux2
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-do SingleCycleProcessor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/execute.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:27:19 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/execute.sv 
-# -- Compiling module execute
-# 
-# Top level modules:
-# 	execute
-# End time: 13:27:19 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:27:19 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/mux2.sv 
-# -- Compiling module mux2
-# 
-# Top level modules:
-# 	mux2
-# End time: 13:27:19 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:27:19 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/adder.sv 
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# End time: 13:27:19 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/alu.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:27:19 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/alu.sv 
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# End time: 13:27:19 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+/home/guille/famaf/arqui/SingleCycleProcessor {/home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:27:19 on Sep 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/guille/famaf/arqui/SingleCycleProcessor" /home/guille/famaf/arqui/SingleCycleProcessor/execute_tb.sv 
-# -- Compiling module execute_tb
-# 
-# Top level modules:
-# 	execute_tb
-# End time: 13:27:19 on Sep 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  execute_tb
-# End time: 13:27:20 on Sep 08,2023, Elapsed time: 0:00:49
-# Errors: 0, Warnings: 0
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" execute_tb 
-# Start time: 13:27:20 on Sep 08,2023
-# Loading sv_std.std
-# Loading work.execute_tb
-# Loading work.execute
-# Loading work.alu
-# Loading work.adder
-# Loading work.mux2
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# End time: 13:28:07 on Sep 08,2023, Elapsed time: 0:00:47
-# Errors: 0, Warnings: 0
+# ** Fatal: Unable to read lock file necessary for use of uncounted nodelocked license. Exiting.
+# End time: 18:58:39 on Sep 11,2023, Elapsed time: 0:05:00
+# Errors: 0, Warnings: 9

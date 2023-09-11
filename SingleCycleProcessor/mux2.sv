@@ -1,8 +1,8 @@
 module mux2 #(parameter int N=64)(
-  input logic[N-1:0] in1, in2,
-  input logic addr,
-  output logic[N-1:0] out
+  input logic[N-1:0] d0, d1,
+  input logic s,
+  output logic[N-1:0] y
 );
 
-assign out = addr == 0 ? in1 : in2;
+assign y = s == 0 ? d0 : d1;
 endmodule

@@ -3,10 +3,9 @@ module imem #(N = 32)(
   output logic[N-1:0] q
 );
 logic [N-1:0] ROM [0:63];
-assign ROM = '{default: 32'h0};
 
-always_comb begin
-  ROM [0:46] = '{
+//always_comb begin
+assign ROM [0:46] = '{
         32'hf8000001, 32'hf8008002, 32'hf8000203, 32'h8b050083,
         32'hf8018003, 32'hcb050083, 32'hf8020003, 32'hcb0a03e4,
         32'hf8028004, 32'h8b040064, 32'hf8030004, 32'hcb030025,
@@ -21,7 +20,7 @@ always_comb begin
         32'h8b1003de, 32'hf81f83d9, 32'hb400001f
       };
   
-end
+//end
 
 
 assign q = ROM[addr];
