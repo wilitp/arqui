@@ -1275,3 +1275,5 @@ do SingleCycleProcessor_run_msim_rtl_systemverilog.do
 # ** Note: $stop    : /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_tb.sv(26)
 #    Time: 24020 ps  Iteration: 0  Instance: /processor_tb
 # Break in Module processor_tb at /home/guille/famaf/arqui/SingleCycleProcessor/patterson_modules/processor_tb.sv line 26
+# End time: 20:04:13 on Sep 11,2023, Elapsed time: 0:41:52
+# Errors: 0, Warnings: 0

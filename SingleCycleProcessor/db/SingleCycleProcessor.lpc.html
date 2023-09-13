@@ -48,6 +48,134 @@
 <TD >0</TD>
 </TR>
 <TR >
+<TD >dp|EXCEPTION|D_SEL</TD>
+<TD >258</TD>
+<TD >124</TD>
+<TD >0</TD>
+<TD >124</TD>
+<TD >64</TD>
+<TD >124</TD>
+<TD >124</TD>
+<TD >124</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >dp|EXCEPTION|RET_SEL</TD>
+<TD >129</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >64</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >dp|EXCEPTION|ESR</TD>
+<TD >7</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >4</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >dp|EXCEPTION|ELR</TD>
+<TD >67</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >64</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >dp|EXCEPTION|ERR</TD>
+<TD >67</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >64</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >dp|EXCEPTION|ESync</TD>
+<TD >3</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >dp|EXCEPTION|EV_Comp</TD>
+<TD >128</TD>
+<TD >64</TD>
+<TD >0</TD>
+<TD >64</TD>
+<TD >1</TD>
+<TD >64</TD>
+<TD >64</TD>
+<TD >64</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >dp|EXCEPTION</TD>
+<TD >202</TD>
+<TD >64</TD>
+<TD >0</TD>
+<TD >64</TD>
+<TD >194</TD>
+<TD >64</TD>
+<TD >64</TD>
+<TD >64</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
 <TD >dp|WRITEBACK|MtoRmux</TD>
 <TD >129</TD>
 <TD >0</TD>
@@ -96,26 +224,26 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >dp|EXECUTE|Mux</TD>
-<TD >129</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >64</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-</TR>
-<TR >
-<TD >dp|EXECUTE|Add</TD>
+<TD >dp|EXECUTE|Add_E</TD>
 <TD >128</TD>
-<TD >2</TD>
 <TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >64</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >dp|EXECUTE|ShiftLeft_E</TD>
+<TD >64</TD>
+<TD >2</TD>
+<TD >2</TD>
 <TD >2</TD>
 <TD >64</TD>
 <TD >2</TD>
@@ -128,7 +256,7 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >dp|EXECUTE|Alu</TD>
+<TD >dp|EXECUTE|ALU</TD>
 <TD >132</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -144,8 +272,24 @@
 <TD >0</TD>
 </TR>
 <TR >
+<TD >dp|EXECUTE|MUX_E</TD>
+<TD >258</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >64</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
 <TD >dp|EXECUTE</TD>
-<TD >261</TD>
+<TD >326</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -224,23 +368,7 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >dp|FETCH|PC</TD>
-<TD >66</TD>
-<TD >0</TD>
-<TD >1</TD>
-<TD >0</TD>
-<TD >64</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-</TR>
-<TR >
-<TD >dp|FETCH|Mux</TD>
+<TD >dp|FETCH|MUX2</TD>
 <TD >129</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -256,7 +384,23 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >dp|FETCH|Adder</TD>
+<TD >dp|FETCH|MUX1</TD>
+<TD >129</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >64</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >dp|FETCH|Add</TD>
 <TD >128</TD>
 <TD >64</TD>
 <TD >0</TD>
@@ -272,8 +416,8 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >dp|FETCH</TD>
-<TD >67</TD>
+<TD >dp|FETCH|PC</TD>
+<TD >66</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -288,12 +432,28 @@
 <TD >0</TD>
 </TR>
 <TR >
+<TD >dp|FETCH</TD>
+<TD >132</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >128</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
 <TD >dp</TD>
-<TD >109</TD>
+<TD >116</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
-<TD >194</TD>
+<TD >195</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -305,7 +465,7 @@
 </TR>
 <TR >
 <TD >c|decAlu</TD>
-<TD >13</TD>
+<TD >14</TD>
 <TD >1</TD>
 <TD >0</TD>
 <TD >1</TD>
@@ -321,11 +481,11 @@
 </TR>
 <TR >
 <TD >c|decPpal</TD>
-<TD >11</TD>
+<TD >12</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
-<TD >9</TD>
+<TD >10</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -337,14 +497,14 @@
 </TR>
 <TR >
 <TD >c</TD>
-<TD >11</TD>
+<TD >14</TD>
+<TD >3</TD>
 <TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >11</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
+<TD >3</TD>
+<TD >18</TD>
+<TD >3</TD>
+<TD >3</TD>
+<TD >3</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>

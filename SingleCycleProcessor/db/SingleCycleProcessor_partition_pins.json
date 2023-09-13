@@ -520,7 +520,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "ExtIAck",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "ExtIRQ",
 					"strict" : false
 				},
 				{

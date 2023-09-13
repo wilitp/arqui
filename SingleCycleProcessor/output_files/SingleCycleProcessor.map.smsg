@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at maindec.sv(16): always construct contains both blocking and non-blocking assignments File: /home/guille/famaf/arqui/SingleCycleProcessor/maindec.sv Line: 16

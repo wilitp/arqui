@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Sep 11 19:13:59 2023
+Analysis & Synthesis Status : Successful - Wed Sep 13 13:34:39 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : SingleCycleProcessor
 Top-level Entity Name : processor_arm
 Family : Cyclone IV E
-Total logic elements : 12,210
-    Total combinational functions : 6,269
-    Dedicated logic registers : 6,144
-Total registers : 6144
-Total pins : 132
+Total logic elements : 5,292
+    Total combinational functions : 3,383
+    Dedicated logic registers : 2,110
+Total registers : 2110
+Total pins : 134
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
