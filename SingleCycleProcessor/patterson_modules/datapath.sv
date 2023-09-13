@@ -19,7 +19,7 @@ module datapath #(parameter N = 64)
 				  output logic ExcAck);
 
 	logic PCSrc;
-	logic [N-1:0] E_Branch, PCBranch, writeData3;
+	logic [N-1:0] E_Branch, M_Branch, E_AbsBranch, PCBranch, writeData3;
 	logic [N-1:0] signImm, readData1, readData2, readData3;
 	logic [N-1:0] NextPC, EVAddr;
 	logic EProc;
@@ -56,13 +56,19 @@ module datapath #(parameter N = 64)
 								.readData2_E(readData2),
 								.readData3_E(readData3),
 								.PCBranch_E(E_Branch),
+                .PCAbsBranch_E(E_AbsBranch),
 								.aluResult_E(DM_addr),
 								.writeData_E(DM_writeData),
 								.zero_E(zero));
 
-	memory  		MEMORY     (.Branch_M(Branch),
+	memory  		MEMORY (
+                .Branch_M(Branch),
 								.zero_M(zero),
-								.PCSrc_M(PCSrc));
+                .Abs_Branch(E_AbsBranch),
+                .Imm_Branch(E_Branch),
+                .Def_Branch(M_Branch),
+								.PCSrc_M(PCSrc)
+              );
 
 
 
@@ -77,7 +83,7 @@ module datapath #(parameter N = 64)
 								.EStatus(EStatus),
 								.NextPC_X(NextPC),
 								.imem_addr_X(IM_addr),
-								.ALUBranch_X(E_Branch),
+								.ALUBranch_X(M_Branch),
 								.EDataSel(IM_readData[13:12]),
 								.ExcAck(ExcAck),
 								.EProc_X(EProc),

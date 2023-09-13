@@ -12,7 +12,8 @@ module controller(input logic [10:0] instr,
             output logic Exc, ERet,
 
 						output logic [3:0] AluControl,						
-						output logic reg2loc, regWrite, AluSrc, Branch,
+            output logic [1:0] Branch,
+						output logic reg2loc, regWrite, AluSrc, 
 											memtoReg, memRead, memWrite);
 											
 	logic [1:0] AluOp_s;
@@ -23,9 +24,9 @@ module controller(input logic [10:0] instr,
   assign ExtIAck = ExcAck & ExtIRQ & ~reset;
 
   always_comb 
-    if (reset == 1) EStatus = 4'b0000;
-    else if (ExtIRQ == 1) EStatus = 4'b0001;
+    if (reset) EStatus = 4'b0000;
     else if(NotAnInstr) EStatus = 4'b0010;
+    else if (ExtIRQ) EStatus = 4'b0001;
     else EStatus = 4'b0000;
 											
 	maindec 	decPpal 	(.Op(instr), 
